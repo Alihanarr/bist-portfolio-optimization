@@ -82,6 +82,21 @@ $$\beta = \frac{\text{Cov}(r_p,\ r_{BIST100})}{\text{Var}(r_{BIST100})}$$
 | `cumulative_returns.png` | Her iki portföy vs BIST100 kümülatif getiri |
 | `risk_return_scatter.png` | Hisse bazlı risk-getiri dağılımı (Sharpe renklendirmesi) |
 
+### Etkin Sınır
+![Efficient Frontier](outputs/efficient_frontier.png)
+
+### Kümülatif Getiri
+![Cumulative Returns](outputs/cumulative_returns.png)
+
+### Portföy Ağırlıkları
+![Portfolio Weights](outputs/portfolio_weights.png)
+
+### Risk-Getiri Dağılımı
+![Risk Return](outputs/risk_return_scatter.png)
+
+### Korelasyon Matrisi
+![Correlation Heatmap](outputs/correlation_heatmap.png)
+
 ---
 
 ## Kurulum
@@ -121,12 +136,18 @@ jupyter notebook
 
 | Metrik | Max Sharpe | Min Volatilite |
 |--------|-----------|----------------|
-| Yıllık Getiri | — | — |
-| Yıllık Volatilite | — | — |
-| Sharpe Oranı | — | — |
-| VaR %95 (günlük) | — | — |
-| CVaR %95 (günlük) | — | — |
-| Beta (BIST100) | — | — |
+| Yıllık Getiri | %82.0 | %55.2 |
+| Yıllık Volatilite | %35.0 | %27.3 |
+| Sharpe Oranı | 1.20 | 0.56 |
+| VaR %95 (günlük) | %-4.51 | %-2.41 |
+| CVaR %95 (günlük) | %-5.40 | %-3.77 |
+| Beta (BIST100) | 0.999 | 0.846 |
+
+**En yüksek ağırlıklı hisseler:**
+- Max Sharpe: ASELS (%55.3), GARAN (%22.9), MGROS (%13.7)
+- Min Volatilite: BIMAS (%19.3), GEDIK (%15.2), LOGO (%13.8)
+
+*Veri aralığı: 2021-04-27 → 2026-04-24 | 18 hisse | 5 yıl*
 
 > Sonuçlar piyasa koşullarına göre değişkenlik gösterir. Geçmiş performans gelecek getiriyi garanti etmez.
 
